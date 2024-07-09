@@ -22,3 +22,10 @@ class Student:
     @property
     def email(self):
         return f"{self._first_name.lower()}.{self._last_name.lower()}@email.com"
+
+    @property
+    def apply_extension(self):
+        pass
+
+    def apply_extension(self, days):
+        self.end_date = self.end_date + timedelta(days=days)
